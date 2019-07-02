@@ -1,0 +1,107 @@
+{
+    "rules" : [
+        // Deleted file or staged deleted file (visible only at folders)
+        {
+        "class": "vcs_status_badge",
+            "parents": [{"class": "file_system_entry", "attributes": ["deleted"]}],
+            "layer0.tint": "color(var(--redish))",
+            "layer0.opacity": 0.8,
+            "content_margin": 6
+        },
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "file_system_entry", "attributes": ["missing"]}],
+            "layer0.tint": "color(var(--redish))",
+            "layer0.opacity": 0.8,
+            "content_margin": 6
+        },
+
+        // Untracked files or staged untracked (added) - Green color
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "file_system_entry", "attributes": ["added"]}],
+            "layer0.texture": "ArxeissTheme/textures/added.png",
+            "layer0.tint": "color(var(--greenish) blend(var(--bluish) 50%))",
+            "layer0.opacity": 0.9,
+            "content_margin": 6
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "file_system_entry", "attributes": ["added"]}],
+            "color": "color(var(--greenish) blend(var(--bluish) 50%) blend(rgb(0, 0, 0) 60%))"
+        },
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "file_system_entry", "attributes": ["untracked"]}],
+            "layer0.texture": "ArxeissTheme/textures/untracked.png",
+            "layer0.tint": "color(var(--greenish) blend(var(--bluish) 50%))",
+            "layer0.opacity": 0.9,
+            "layer0.draw_center": true,
+            "content_margin": 6
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "file_system_entry", "attributes": ["untracked"]}],
+            "color": "color(var(--greenish) blend(var(--bluish) 50%) blend(rgb(0, 0, 0) 60%))"
+        },
+
+        // Modified file or staged modified file - Yellow color
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "file_system_entry", "attributes": ["staged"]}],
+            "layer0.texture": "ArxeissTheme/textures/staged.png",
+            "layer0.tint": "var(--yellowish)",
+            "layer0.opacity": 0.8,
+            "content_margin": 6
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "file_system_entry", "attributes": ["staged"]}],
+            "color": "color(var(--yellowish) blend(rgb(0, 0, 0) 60%))"
+        },
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "file_system_entry", "attributes": ["modified"]}],
+            "layer0.texture": "ArxeissTheme/textures/modified.png",
+            "layer0.tint": "var(--yellowish)",
+            "layer0.opacity": 0.8,
+            "content_margin": 6
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "file_system_entry", "attributes": ["modified"]}],
+            "color": "color(var(--yellowish) blend(rgb(0, 0, 0) 60%))"
+        },
+
+        // Conflicted merge
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "file_system_entry", "attributes": ["unmerged"]}],
+            "layer0.texture": "Theme - Default/common/status_unmerged.png",
+            "layer0.tint": "var(--pinkish)",
+            "layer0.opacity": 1.0,
+            "content_margin": 6
+        },
+        {
+            "class": "sidebar_label",
+            "parents": [{"class": "file_system_entry", "attributes": ["unmerged"]}],
+            "color": "color(var(--pinkish) blend(rgb(0, 0, 0) 60%))"
+        },
+
+        // At folder always show circle and inherit color from above
+        {
+            "class": "vcs_status_badge",
+            "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+            "layer0.texture": "Theme - Default/common/status_modified.png",
+        },
+        // Except unmerged status
+        {
+            "class": "vcs_status_badge",
+            "parents": [
+                {"class": "tree_row", "attributes": ["expandable"]},
+                {"class": "file_system_entry", "attributes": ["unmerged"]}
+            ],
+            "layer0.texture": "Theme - Default/common/status_unmerged.png",
+        },
+    ]
+}

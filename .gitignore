@@ -1,0 +1,11 @@
+### OSX ###
+.DS_Store
+
+### Node ###
+/node_modules
+package-lock.json
+
+### Sublime Text ###
+*.sublime-*
+!*.sublime-project
+!*.sublime-theme
