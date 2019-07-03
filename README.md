@@ -13,6 +13,13 @@ Install as plugin via Package Control - TODO: add link when published
 
 ![New VC Code like badges](./screenshot.png)
 
+**Explanation:**<br>
+- New files are **green** with `U` badge (untracked) or `A` badge when added to staging area
+- Modified files are **yellow** with `M` badge when unstaged or `S` badge when staged
+- Folder of deleted file has no color (red evoke error) but has **red** circle badge
+- Conflicted file is **red** with git merge badge
+- Folder has always circle badge (no letter or icon) except Conflicted
+
 ## Contribute
 
 Contribution is welcome. Leave an Issue or Pull request
