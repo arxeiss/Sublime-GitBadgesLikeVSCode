@@ -9,6 +9,8 @@ Based on [OdatNurd's gist](https://gist.github.com/OdatNurd/4bb596e6162693567642
 
 Install as plugin via Package Control - TODO: add link when published
 
+> Note that this plugin works only on Sublime Text 3.2 and above *(>=3200)*, as in this version native git implementation was added.
+
 ## How it looks
 
 ![New VC Code like badges](./screenshot.png)
