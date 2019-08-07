@@ -7,7 +7,7 @@ Based on [OdatNurd's gist](https://gist.github.com/OdatNurd/4bb596e6162693567642
 
 ## Install
 
-Install as plugin via Package Control - TODO: add link when published
+Install as plugin via [Package Control](https://packagecontrol.io/packages/Git%20badges%20like%20VS%20Code)
 
 > Note that this plugin works only on Sublime Text 3.2 and above *(>=3200)*, as in this version native git implementation was added.
 
