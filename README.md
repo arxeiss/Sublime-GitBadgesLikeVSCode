@@ -25,3 +25,15 @@ Install as plugin via [Package Control](https://packagecontrol.io/packages/Git%2
 ## Contribute
 
 Contribution is welcome. Leave an Issue or Pull request
+
+### Icons
+
+Icons must be in PNG format in RGB mode (not palette mode). Use prepared PSD in [Photopea](https://www.photopea.com), which can export file in RGB mode.
+
+## Changelog
+
+### v1.1.0
+
+- Create new `A`, `M`, `S` and `U` icons
+- Fixed path to custom icons
+
