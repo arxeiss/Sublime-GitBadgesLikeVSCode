@@ -22,7 +22,7 @@
             "parents": [{"class": "file_system_entry", "attributes": ["added"]}],
             "layer0.texture": "Git badges like VS Code/textures/added.png",
             "layer0.tint": "color(var(--greenish) blend(var(--bluish) 50%))",
-            "layer0.opacity": 0.9,
+            "layer0.opacity": 1,
             "content_margin": 6
         },
         {
@@ -35,7 +35,7 @@
             "parents": [{"class": "file_system_entry", "attributes": ["untracked"]}],
             "layer0.texture": "Git badges like VS Code/textures/untracked.png",
             "layer0.tint": "color(var(--greenish) blend(var(--bluish) 50%))",
-            "layer0.opacity": 0.9,
+            "layer0.opacity": 1,
             "layer0.draw_center": true,
             "content_margin": 6
         },
@@ -50,7 +50,7 @@
             "class": "vcs_status_badge",
             "parents": [{"class": "file_system_entry", "attributes": ["staged"]}],
             "layer0.texture": "Git badges like VS Code/textures/staged.png",
-            "layer0.tint": "var(--yellowish)",
+            "layer0.tint": "color(var(--yellowish) blend(rgb(0, 0, 0) 90%)",
             "layer0.opacity": 0.8,
             "content_margin": 6
         },
@@ -63,7 +63,7 @@
             "class": "vcs_status_badge",
             "parents": [{"class": "file_system_entry", "attributes": ["modified"]}],
             "layer0.texture": "Git badges like VS Code/textures/modified.png",
-            "layer0.tint": "var(--yellowish)",
+            "layer0.tint": "color(var(--yellowish) blend(rgb(0, 0, 0) 90%)",
             "layer0.opacity": 0.8,
             "content_margin": 6
         },
